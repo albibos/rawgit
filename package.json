@@ -1,0 +1,28 @@
+{
+  "name": "rawgit",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "4.15.2",
+    "express-handlebars": "3.0.0",
+    "mime-db": "1.27.0",
+    "newrelic": "1.38.2",
+    "on-finished": "2.3.0"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "eslint": "3.19.0",
+    "mocha": "3.2.0",
+    "morgan": "1.8.1",
+    "nock": "2.18.2",
+    "nodemon": "1.11.0",
+    "supertest": "3.0.0"
+  },
+  "scripts": {
+    "clean-fixtures": "scripts/clean-fixtures.js test/fixtures/*.json",
+    "lint": "eslint .",
+    "record-fixtures": "NOCK_BACK_MODE=record npm test && npm run-script clean-fixtures",
+    "start": "NODE_ENV=development nodemon",
+    "test": "NODE_ENV=test mocha -R dot test/**/test.*.js"
+  }
+}
