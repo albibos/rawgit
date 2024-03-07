@@ -2,7 +2,7 @@
 
 This is the source code behind <https://rawgit.com/>.
 
-Have questions about RawGit? See the [FAQ](FAQ.md).
+<a target="_blank" href="https://glitch.com/edit/#!/import/github/albibos/rawgit"><img alt="Remix on Glitch" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg"></a>
 
 ## Installing
 
